@@ -1,0 +1,90 @@
+.topbar {
+  width: 100%;
+  height: 50px;
+  background-color: #202020;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+.topbarWrapper {
+  height: 100%;
+  padding: 0px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 30px;
+  color: darkblue;
+  cursor: pointer;
+}
+
+.topRight{
+    display: flex;
+    align-items: center;
+}
+
+.topbarIconContainer {
+  position: relative;
+  cursor: pointer;
+  margin-right: 10px;
+  color: #555;
+}
+
+.topIconBadge{
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    top: -5px;
+    right: 0px;
+    background-color: red;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 10px;
+}
+
+.topAvatar{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.profile-options {
+
+  .optioncls {
+      display: none;
+      background-color: #adadad;
+      border-radius: 5px;
+  }
+
+  span {
+      padding: 10px;
+      cursor: pointer;
+      color: #000;
+      &:hover{
+          text-decoration: dashed;
+          color: red;
+      }
+  }
+
+  &:hover {
+      .optioncls {
+          display: flex;
+          flex-direction: column;
+          position: absolute;
+          right: 5px;
+          width: 80px;
+          padding: 5px;
+          align-items: center;
+      }
+  }
+
+
+}

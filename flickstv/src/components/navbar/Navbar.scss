@@ -1,0 +1,109 @@
+@import "../../App.scss";
+
+.navbar {
+    color: white;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 999;
+    background: linear-gradient(to top, transparent 0%, rgb(0, 0, 0, 0.4) 50%);
+
+    &.scrolledst {
+        background-color: var(--main-color);
+    }
+
+    .container {
+        height: 80px;
+        padding: 0px 40px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        font-size: 20px;
+
+        @include mobile {
+            padding: 0px 15px;
+          }
+
+        .leftside {
+            display: flex;
+            align-items: center;
+
+            span {
+                margin: 0px 10px;
+                cursor: pointer;
+                text-decoration: none;
+                &:hover{
+                    text-decoration: dashed;
+                    color: red;
+                }
+            }
+
+            img {
+                margin-right: 40px;
+                margin-top: 10px;
+                @include mobile {
+                    display: none;
+                  }
+            }
+
+        }
+
+    }
+
+
+    .rightside {
+        display: flex;
+        align-items: center;
+
+        .icons {
+            margin: 0px 10px;
+            cursor: pointer;
+            &:hover{
+                text-decoration: dashed;
+                color: red;
+            }
+        }
+
+        img {
+            height: 40px;
+            cursor: pointer;
+            border-radius: 10px;
+            object-fit: cover;
+            margin-left: 25px;
+        }
+
+        .profile-options {
+
+            .optioncls {
+                display: none;
+                background-color: var(--main-color);
+                border-radius: 15px;
+            }
+
+            span {
+                padding: 10px;
+                cursor: pointer;
+                &:hover{
+                    text-decoration: dashed;
+                    color: red;
+                }
+            }
+
+            &:hover {
+                .optioncls {
+                    display: flex;
+                    flex-direction: column;
+                    position: absolute;
+                    right: 5px;
+                    width: 80px;
+                    padding: 5px;
+                    align-items: center;
+                }
+            }
+
+
+        }
+
+
+    }
+}
